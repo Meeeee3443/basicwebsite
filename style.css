@@ -1,171 +1,228 @@
 header{
-    display: flex;
-    justify-content: space-evenly;
-    margin:20px 10px 10px 10px;
-    font-size: 20px;
-    font-weight: 600;
+  display: flex;
+  justify-content: space-evenly;
+  margin:20px 10px 10px 10px;
+  font-size: 20px;
+  font-weight: 600;
 }
 
-  
+
 #menu{
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .menuList li{
-    display: inline;
-    list-style: none;
-    margin: 10px 10px 10px 10px;
+  display: inline;
+  list-style: none;
+  margin: 10px 10px 10px 10px;
 }
 
 .active{
-    color: rgb(235, 11, 11) !important;
+  color: rgb(235, 11, 11) !important;
 }
 
 a:visited{
-    color: lightskyblue;
+  color: lightskyblue;
 }
 
 /* All Page Style */
 
 body{
-    background: #000;
+  background: #000;
 }
 h1{
-    color: greenyellow;
-    font-size: 48px;
+  color: greenyellow;
+  font-size: 48px;
 }
 
 h2{
-    font-size: 36px;
-    color: aqua;
-    margin-left: 20px;
+  font-size: 36px;
+  color: aqua;
+  margin-left: 20px;
 }
 
 h3{
-    font-size: 3rem;
-    color: aqua;
-    margin-left: 20px;
+  font-size: 2rem;
+  color: aqua;
+  margin-left: 20px;
 }
 /* Cloud style*/
 
 .cloud{ 
-    margin-top:70px;
-    width:22em;
-    height:7em;
-    background:#ECEFF1;
-    box-shadow: 10px 10px rgba(0,0,0,0.2);
-    border-radius:100px;
+  margin-top:70px;
+  width:22em;
+  height:7em;
+  background:#ECEFF1;
+  box-shadow: 10px 10px rgba(0,0,0,0.2);
+  border-radius:100px;
 
- }
- .cloud::after, .cloud::before{
-    content:"";
-    position:relative;
-    display:inline-block;
-    background:inherit;
-    border-radius:inherit;
+}
+.cloud::after, .cloud::before{
+  content:"";
+  position:relative;
+  display:inline-block;
+  background:inherit;
+  border-radius:inherit;
 }
 .cloud::after{
-    width:100px;
-    height:100px;
-    top: -140px;
-    left:-130px;
+  width:100px;
+  height:100px;
+  top: -140px;
+  left:-130px;
 }
 .cloud::before{
-    width:180px;
-    height:180px;
-    top: -80px;
-    left:130px;
+  width:180px;
+  height:180px;
+  top: -80px;
+  left:130px;
 }
 
 /* From https://css.glass */
 .glassmorphism{
-    display: flex;
-    justify-content: space-evenly;
-    height: 10em;
-    background: rgba(255, 12, 12, 0.45);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(9.1px);
-    -webkit-backdrop-filter: blur(9.1px);
-    border: 1px solid rgba(255, 12, 12, 0.5);
+  display: flex;
+  justify-content: space-evenly;
+  height: 10em;
+  background: rgba(255, 12, 12, 0.45);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.1px);
+  -webkit-backdrop-filter: blur(9.1px);
+  border: 1px solid rgba(255, 12, 12, 0.5);
 }
 
 /* Smart Phone */
 
 /* The device with borders */
 .smartphone {
-    position: relative;
-    width: 360px;
-    height: 640px;
-    margin: auto;
-    border: 16px white solid;
-    border-top-width: 60px;
-    border-bottom-width: 60px;
-    border-radius: 36px;
-    transform: rotate(-0.25turn);
-  }
-  
-  /* The horizontal line on the top of the device */
-  .smartphone:before {
-    content: '';
-    display: block;
-    width: 60px;
-    height: 5px;
-    position: absolute;
-    top: -30px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #333;
-    border-radius: 10px;
-  }
-  
-  /* The circle on the bottom of the device */
-  .smartphone:after {
-    content: '';
-    display: block;
-    width: 35px;
-    height: 35px;
-    position: absolute;
-    left: 50%;
-    bottom: -65px;
-    transform: translate(-50%, -50%);
-    background: #333;
-    border-radius: 50%;
-  }
-  
-  /* The screen (or content) of the device */
-  .smartphone .content {
-    width: 178%;
-    height: 55%;
-    background: black;
-    transform: rotate(90deg);
-    top: 9em;
-    position: fixed;
-    left: -135px;
-  }
+  position: relative;
+  width: 200px;
+  height: 391px;
+  margin: auto;
+  border: 16px white solid;
+  border-top-width: 60px;
+  border-bottom-width: 60px;
+  border-radius: 36px;
+  transform: rotate(-0.25turn);
+}
+
+/* The horizontal line on the top of the device */
+.smartphone:before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 5px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 10px;
+}
+
+/* The circle on the bottom of the device */
+.smartphone:after {
+  content: '';
+  display: block;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 50%;
+  bottom: -65px;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 50%;
+}
+
+/* The screen (or content) of the device */
+.smartphone .content {
+  width: 196%;
+  height: 55%;
+  background: black;
+  transform: rotate(90deg);
+  top: 5.5em;
+  position: fixed;
+  left: -97px;
+}
 
 
-  /* Type Writer Effect */
+/* Type Writer Effect */
 
-  .container{
-    display: inline-block;
+.container{
+  display: inline-block;
 }
 .typed-out{
-    overflow: hidden;
-    border-right: .30em solid orange;
-    border-radius: 4px;
-    white-space: nowrap;
-    animation: 
-      typing 1s steps(20, end) forwards,
-      blinking 1.2s infinite;
-    font-size: 1.6rem;
-    width: 0;
+  overflow: hidden;
+  border-right: .30em solid orange;
+  border-radius: 4px;
+  white-space: nowrap;
+  animation: 
+    typing 1s steps(20, end) forwards,
+    blinking 1.2s infinite;
+  font-size: 1.6rem;
+  width: 0;
 }
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+from { width: 0 }
+to { width: 100% }
 }
 @keyframes blinking {
-  from { border-color: transparent }
-  to { border-color: rgb(128, 30, 0); }
+from { border-color: transparent }
+to { border-color: rgb(128, 30, 0); }
 }
+
+
+/* Tablet  */
+
+/* The device with borders */
+.tablet {
+  position: relative;
+  width: 384px;
+  height: 512px;
+  margin: auto;
+  border: 16px rgb(255, 255, 255) solid;
+  border-top-width: 60px;
+  border-bottom-width: 60px;
+  border-radius: 36px;
+}
+
+/* The horizontal line on the top of the device */
+.tablet:before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 5px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 10px;
+}
+
+/* The circle on the bottom of the device */
+.tablet:after {
+  content: '';
+  display: block;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 50%;
+  bottom: -65px;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 50%;
+}
+
+/* The screen (or content) of the device */
+.tablet .content {
+  width: 384px;
+  height: 484px;
+  background: rgb(0, 0, 0);
+  margin: -1px;
+}
+
+
+/* Add both Mobile and tablet in two column */
+/* .row .column{
+   display: inline-block;
+} */
