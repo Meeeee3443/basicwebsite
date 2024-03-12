@@ -97,7 +97,7 @@ h3{
   position: relative;
   width: 200px;
   height: 391px;
-  margin: auto;
+  margin: 0 10em 0 0;
   border: 16px white solid;
   border-top-width: 60px;
   border-bottom-width: 60px;
@@ -142,6 +142,7 @@ h3{
   top: 5.5em;
   position: fixed;
   left: -97px;
+  text-align: start;
 }
 
 
@@ -178,7 +179,7 @@ to { border-color: rgb(128, 30, 0); }
   position: relative;
   width: 384px;
   height: 512px;
-  margin: auto;
+  margin: 0 0 0 10em;
   border: 16px rgb(255, 255, 255) solid;
   border-top-width: 60px;
   border-bottom-width: 60px;
@@ -219,10 +220,19 @@ to { border-color: rgb(128, 30, 0); }
   height: 484px;
   background: rgb(0, 0, 0);
   margin: -1px;
+  text-align: start;
 }
 
 
 /* Add both Mobile and tablet in two column */
-/* .row .column{
-   display: inline-block;
-} */
+  .row {
+  border: 1px solid black;
+  margin: 1rem;
+  padding: 2rem 2rem;
+  text-align: center;
+}
+
+  .column {
+    display: inline-block;
+    vertical-align: middle;
+  }
